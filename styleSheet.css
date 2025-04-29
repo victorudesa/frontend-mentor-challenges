@@ -1,0 +1,173 @@
+    /* INICIO - MINIMAL CSS RESET */
+
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul,
+    td,
+    th {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style-type: disc;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* FIM - MINAL CSS RESET */
+
+
+
+
+    html {
+        font-size: 16px;
+        /* define the root font size, so it's easy to scale up using the rem unit */
+        font-family: 'Young Serif', serif;
+        line-height: 1.6;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(24, 5%, 18%);
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: clamp(0.8rem, 4.8vw, 5.2rem);
+    }
+
+    h1 {
+        font-size: clamp(0.6rem, 9.5vw, 4.8rem);
+        font-weight: normal;
+        margin: clamp(1rem, 4.2vw, 2rem) 0;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: clamp(0.3rem, 7vw, 3rem);
+        color: hsl(14, 45%, 36%);
+        margin-bottom: clamp(0.75rem, 1.4vw, 2.5rem);
+    }
+
+    h3 {
+        font-size: clamp(0.3rem, 5vw, 2.5rem);
+        color: hsl(332, 51%, 32%);
+        margin-bottom: clamp(0.5rem, 1.0vw, 2.0rem);
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: clamp(1rem, 2.5vw, 2.0rem);
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    table,
+    h3,
+    h4,
+    li,
+    caption,
+    table {
+        font-family: Outfit, 'sans-serif';
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li::marker {
+        color: hsl(332, 51%, 32%);
+        font-weight: bold;
+    }
+
+    li {
+        font-size: clamp(1rem, 2vw, 3rem);
+        padding-left: 1.5rem;
+        margin-left: 1.8rem;
+        margin-bottom: 1vh;
+        font-weight: normal;
+    }
+
+    section {
+        margin: 4vh 0;
+    }
+
+    section.preparation {
+        background-color: hsl(330, 100%, 98%);
+        padding: 1em 2em;
+        border-radius: 0.6rem;
+    }
+
+    img {
+        border-radius: 1rem;
+        /* margin: 2rem 0; */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+
+    th,
+    td {
+        font-size: 1.8rem;
+        text-align: left;
+        padding: 1.5rem 2rem;
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
+
+    th {
+        color: hsl(30, 10%, 34%);
+    }
+
+    td {
+        color: hsl(14, 45%, 36%);
+        font-weight: 600;
+    }
+
+    tr {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+
+    caption {
+        font-size: clamp(1rem, 2vw, 3rem);
+        text-align: left;
+        margin-bottom: clamp(0.75rem, 1.5vw, 2.5rem);
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
