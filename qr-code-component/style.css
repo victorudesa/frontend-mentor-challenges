@@ -1,0 +1,73 @@
+    /*define custom CSS properties (variables)*/
+    :root {
+        --color-slate-900: #1F314F;
+        --color-slate-500: #68778D;
+        --color-slate-300: #D5E1EF;
+        --color-blue-600: #2C7DFA;
+        --color-blue-500: #3685FF;
+        --color-white: #FFFFFF;
+
+        --spacing-500: 40px;
+        --spacing-300: 24px;
+        --spacing-200: 16px;
+
+        --font-size-text-preset-1: 15px;
+        --font-size-text-preset-2: 22px;
+    }
+
+    body {
+        font-family: "Outfit", sans-serif;
+        padding: var(--spacing-500) var(--spacing-500) var(--spacing-500) var(--spacing-500);
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--color-slate-300);
+        box-sizing: border-box;
+    }
+
+    main.qrcode-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 288px;
+        height: auto;
+        border-radius: 20px;
+        background-color: var(--color-white);
+        padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+    }
+
+    img {
+        width: 288px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: var(--color-slate-900);
+        text-align: center;
+        font-size: var(--font-size-text-preset-2);
+        line-height: 120%;
+    }
+
+    p {
+        color: var(--color-slate-500);
+        text-align: center;
+        font-size: var(--font-size-text-preset-1);
+        font-style: normal;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
