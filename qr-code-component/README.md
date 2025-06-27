@@ -28,10 +28,9 @@ I gained practical experience with semantic HTML, the Flexbox model, and utilizi
 ![Screenshot of card with QR Code on a desktop screen](./screenshots-solution/mobile-solution.jpg)
 
 ### Links
-**Note: update this later with GitHub Pages**
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/qr-code-component)
+- Live Site URL: [Add live site URL here](https://victorudesa.github.io/frontend-mentor-challenges/qr-code-component/)
 
 ## My process
 
@@ -60,12 +59,9 @@ For continued development, I plan to incorporate CSS resets into my workflow to 
 
 - [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) - MDN is a cornerstone reference in web development, especially for best practices. This article, like many others from their website, made Flexbox a lot clearer.
 - [W3 - CSS Variables](https://www.w3schools.com/css/css3_variables.asp) - The W3C is also a huge reference, and it's beneficial to draw knowledge from different sources.
-- (https://www.designsystems.com/)
+- [Design Systems](https://www.designsystems.com/)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [Victor de Sá](https://github.com/victorudesa)
+- Behance - [@victorurdesa](https://www.behance.net/victorurdesa)
