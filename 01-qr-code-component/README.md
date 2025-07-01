@@ -23,14 +23,14 @@ I gained practical experience with semantic HTML, the Flexbox model, and utilizi
 
 ### Screenshot
 
-![Desktop solution screenshot](./screenshots-solution/desktop-solution.jpg)
+![Desktop solution screenshot](./screenshots/desktop-solution.jpg)
 
-![Mobile solution screenshot](./screenshots-solution/mobile-solution.jpg)
+![Mobile solution screenshot](./screenshots/mobile-solution.jpg)
 
 ### Links
 
-- Solution URL: [QR Code Component Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/qr-code-component)
-- Live Site URL: [QR Code Component Page](https://victorudesa.github.io/frontend-mentor-challenges/qr-code-component/)
+- Solution URL: [QR Code Component Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/01-qr-code-component)
+- Live Site URL: [QR Code Component Page](https://victorudesa.github.io/frontend-mentor-challenges/01-qr-code-component/)
 
 ## My process
 
