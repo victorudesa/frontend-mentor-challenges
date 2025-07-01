@@ -25,9 +25,9 @@ I recreated the project in Figma before transitioning to HTML/CSS. I then utiliz
 
 ### Screenshot
 
-* ![Desktop-default screeshot](./screenshots/desktop-default.png)
+* ![Desktop-default screeshot](./screenshots/desktop-default.PNG)
 * ![Desktop-hover screeshot](./screenshots/desktop-hover.png)
-* ![Mobile screeshot](./screenshots/mobile.png)
+* ![Mobile screeshot](./screenshots/mobile.PNG)
 
 ### Links
 
