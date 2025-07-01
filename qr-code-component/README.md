@@ -23,14 +23,14 @@ I gained practical experience with semantic HTML, the Flexbox model, and utilizi
 
 ### Screenshot
 
-![Screenshot of card with QR Code on a desktop screen](./screenshots-solution/desktop-solution.jpg)
+![Desktop solution screenshot](./screenshots-solution/desktop-solution.jpg)
 
-![Screenshot of card with QR Code on a desktop screen](./screenshots-solution/mobile-solution.jpg)
+![Mobile solution screenshot](./screenshots-solution/mobile-solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/qr-code-component)
-- Live Site URL: [Add live site URL here](https://victorudesa.github.io/frontend-mentor-challenges/qr-code-component/)
+- Solution URL: [QR Code Component Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/qr-code-component)
+- Live Site URL: [QR Code Component Page](https://victorudesa.github.io/frontend-mentor-challenges/qr-code-component/)
 
 ## My process
 
@@ -63,5 +63,6 @@ For continued development, I plan to incorporate CSS resets into my workflow to 
 
 ## Author
 
-- GitHub - [Victor de Sá](https://github.com/victorudesa)
-- Behance - [@victorurdesa](https://www.behance.net/victorurdesa)
+- [GitHub](https://github.com/victorudesa)
+- [Behance](https://www.behance.net/victorurdesa)
+- [LinkedIn](https://www.linkedin.com/in/victorudesa/)
