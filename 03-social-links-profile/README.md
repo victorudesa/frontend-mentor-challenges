@@ -1,93 +1,75 @@
-# Frontend Mentor - Social links profile
+# Frontend Mentor Challenges - Social Links Profile Solution
 
-![Design preview for the Social links profile coding challenge](./preview.jpg)
+Hello, I'm Victor!
+This is my solution to the [Social Links Profile Challenge](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Challenges provided by Frontend Mentor offer an opportunity to enhance coding skills by building practical applications. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor Challenges - Social Links Profile Solution](#frontend-mentor-challenges---social-links-profile-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+This is my third Frontend Mentor challenge project, and it truly allowed me to dive deeper into Flexbox and refine my coding practices. I specifically focused on applying the DRY (Don't Repeat Yourself) principle to write cleaner, more efficient code.
+This project also served as a great opportunity to practice working with the Figma file more quickly, speeding up my design-to-code workflow. A significant step forward for me was successfully implementing @media queries for the first time to improve responsiveness, a simple yet impactful addition that I'm proud of.
 
-## The challenge
+### Screenshot
 
-Your challenge is to build out this social links profile and get it looking as close to the design as possible.
+* ![Desktop-default screeshot](./screenshots-solutions/desktop-solution.JPG)
+* ![Desktop-hover screeshot](./screenshots-solutions/desktop-hover-solution.jpg)
+* ![Mobile screeshot](./screenshots-solutions/mobile-solution.JPG)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Links
 
-Your users should be able to: 
+- Solution URL: [Blog Preview Card Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/03-social-links-profile)
+- Live Site URL: [Blog Preview Card Page](https://victorudesa.github.io/frontend-mentor-challenges/03-social-links-profile/)
 
-- See hover and focus states for all interactive elements on the page
+## My process
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+I began this challenge, as usual, by recreating the design in Figma. This time, I paid closer attention to practicing Auto Layout and setting up variables within Figma, which further streamlined the design-to-code process.
+Then, I coded the HTML, focusing heavily on semantic structure. For the CSS, I continued leveraging design tokens (CSS custom properties) and implemented a :hover pseudo-class for the interactive elements for the first time, incorporating a smooth CSS transition property to enhance the user experience.
 
-## Where to find everything
+### Built with
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Simple CSS Reset
+- @media queries
+- :hover pseudo-class with CSS transition
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### What I learned
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+* Deepened my understanding and application of Flexbox for creating clean and responsive layouts.
+* Further refined my CSS organization and actively practiced the DRY (Don't Repeat Yourself) principle by effectively using CSS custom properties (design tokens), leading to cleaner and more maintainable stylesheets.
+* Successfully implemented a simple CSS reset for better cross-browser consistency, which I plan to continue integrating into future projects.
+* Gained hands-on experience with @media queries to adapt the design for different screen sizes, marking my first successful attempt at basic responsiveness.
+* Configured interactive :hover effects for the first time, utilizing the CSS transition property to create a smooth and engaging user experience.
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Continued development
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+* I plan to continue applying and exploring various CSS reset methodologies in my projects.
+* Additionally, I aim to experiment further with advanced Flexbox properties and begin exploring CSS Grid for more complex layout challenges.
+* I will focus on implementing more sophisticated responsive design patterns beyond basic @media queries to ensure robust adaptability across all devices.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Useful resources
 
-## Building your project
+- [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) - MDN is a cornerstone reference in web development, especially for best practices. This article, like many others from their website, made Flexbox a lot clearer.
+- [W3 - CSS Variables](https://www.w3schools.com/css/css3_variables.asp) - The W3C is also a huge reference, and it's beneficial to draw knowledge from different sources.
+- [Design Systems](https://www.designsystems.com/)
+- [CSS Minimal Reset](https://www.digitalocean.com/community/tutorials/css-minimal-css-reset)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## Author
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- [GitHub](https://github.com/victorudesa)
+- [Behance](https://www.behance.net/victorurdesa)
+- [LinkedIn](https://www.linkedin.com/in/victorudesa/)

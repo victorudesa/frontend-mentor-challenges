@@ -1,11 +1,11 @@
-# Frontend Mentor - Blog Preview Card
+# Frontend Mentor Challenges - Blog Preview Card Solution
 
 Hello, I'm Victor!
 This is my solution to the [Blog preview card challenge](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Challenges provided by Frontend Mentor offer an opportunity to enhance coding skills by building practical applications. 
 
 ## Table of contents
 
-- [Frontend Mentor - Blog Preview Card](#frontend-mentor---blog-preview-card)
+- [Frontend Mentor Challenges - Blog Preview Card Solution](#frontend-mentor-challenges---blog-preview-card-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
