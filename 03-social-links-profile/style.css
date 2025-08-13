@@ -1,0 +1,117 @@
+/*Simple CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Defining variables and global properties*/
+:root {
+    font-size: 14px;
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: white;
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+
+    --font-size-h1: 1.8rem;
+
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-500: 40px;
+    --spacing-700: 56px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-white);
+    background-color: var(--color-grey-900);
+    min-height: 100vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-500);
+}
+
+main {
+    display: flex;
+    /* Making sure the main container always wraps the article for intuitive sizing,
+    since all the content is inside the article and the main tag is only for semantic purposes*/
+}
+
+.profile-card {
+    background-color: var(--color-grey-800);
+    border-radius: 0.8rem;
+    padding: var(--spacing-500);
+    min-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-300);
+}
+
+@media (width < 425px) {
+    .profile-card {
+        min-width: 85%;
+    }
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+.profile-address {
+    color: var(--color-green);
+    font-weight: var(--font-weight-bold);
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    width: 88px;
+    border-radius: 50%
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.buttons-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-150);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a {
+    display: block;
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    font-weight: var(--font-weight-semi-bold);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;;
+}
+
+li a:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-800);
+}
