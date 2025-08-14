@@ -146,6 +146,6 @@ li a:hover {
     transition: transform 0.1s ease;
 }
 
-.attribution-icons img:hover {
+.attribution-icons svg:hover {
     transform: scale(1.2);
 }
