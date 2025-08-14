@@ -1,10 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-yellow: #F4D04E;
   --color-white: #FFFFFF;
   --color-gray-500: #6B6B6B;
   --color-gray-950: #121212;
 
-  --font-size-p-h2-h3: 15px;
+  --font-size-p: 15px;
   --font-size-h1: 24px;
 
   --font-weight-bold: 800;
@@ -16,123 +22,126 @@
   --spacing-300: 24px;
 }
 
-/* Declaração para a fonte Figtree (peso 500) */
 @font-face {
   font-family: 'Figtree';
-  /* Mesmo nome da família para ambos */
   src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype');
-  /* Ou outros formatos */
   font-weight: 500;
-  /* Peso para este arquivo específico */
   font-style: normal;
   font-display: swap;
-  /* Boa prática para carregamento */
 }
 
-/* Declaração para a fonte Figtree (peso 800) */
 @font-face {
   font-family: 'Figtree';
-  /* Mesmo nome da família para ambos */
   src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
-  /* Ou outros formatos */
   font-weight: 800;
-  /* Peso para este arquivo específico */
   font-style: normal;
-  /* Se é itálico ou normal */
   font-display: swap;
-  /* Boa prática para carregamento */
-}
-
-/* 1. Border-box é mais intuitivo */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remoção de margem padrão */
-* {
-  margin: 0;
 }
 
 body {
+  padding: 3rem;
   min-height: 100vh;
   font-family: "Figtree", sans-serif;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
   background-color: var(--color-yellow);
 }
 
-main.preview-card {
+.preview-card {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-300);
+  gap: 1rem;
   width: 100%;
-  max-width: 390px;
+  max-width: 384px;
   padding: var(--spacing-300);
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   box-shadow: 8px 8px 0px 0px #000;
   background-color: var(--color-white);
 }
 
-div.tag {
-  display: flex;
-  align-self: flex-start;
-  padding: 5px 10px;
-  background: var(--color-yellow);
-  border-radius: 4px;
-}
-
-div.author {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-}
-
-img.banner-image {
+.banner-image {
   width: 100%;
-  max-width: 336px;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 
-img {
-  width: 30px;
-  height: auto;
+.tag {
+  font-weight: var(--font-weight-bold);
+  align-self: flex-start;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-yellow);
+  border-radius: 0.3rem;
 }
 
-p,
-h2,
-h3 {
-  font-size: var(--font-size-p-h2-h3);
+.publish-date {
+  color: var(--color-gray-950);
 }
 
 p {
+  font-size: var(--font-size-p);
   color: var(--color-gray-500);
-}
-
-h3 {
-  font-weight: var(--font-weight-normal);
 }
 
 h1 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
+  transition: color 0.2s ease;
 }
 
 h1:hover {
   color: var(--color-yellow);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.author-image {
+  width: 100%;
+  max-width: 32px;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: var(--color-gray-950);
+}
+
+/*ATRIBUTION*/
+.attribution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.attribution-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.attribution-icons img {
+  width: 100%;
+  max-width: 25px;
+  transition: transform 0.1s ease;
+}
+
+.attribution-icons img:hover {
+  transform: scale(1.2);
 }
