@@ -1,4 +1,9 @@
-    /*define custom CSS properties (variables)*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     :root {
         --color-slate-900: #1F314F;
         --color-slate-500: #68778D;
@@ -11,63 +16,88 @@
         --spacing-300: 24px;
         --spacing-200: 16px;
 
-        --font-size-text-preset-1: 15px;
-        --font-size-text-preset-2: 22px;
+        --font-size-paragraph: 15px;
+        --line-height-paragraph: 1.4;
+        --font-size-h1: 22px;
+        --line-height-h1: 1.2;
     }
 
     body {
         font-family: "Outfit", sans-serif;
-        padding: var(--spacing-500) var(--spacing-500) var(--spacing-500) var(--spacing-500);
+        padding: var(--spacing-500);
         height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        background-color: var(--color-slate-300);
-        box-sizing: border-box;
-    }
-
-    main.qrcode-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        width: 288px;
-        height: auto;
-        border-radius: 20px;
+        align-items: center;
+        gap: 3rem;
+        background-color: var(--color-slate-300);
+    }
+
+    .qrcode-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 288px;
+        border-radius: 1rem;
         background-color: var(--color-white);
-        padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+        padding: var(--spacing-200);
+        padding-bottom: var(--spacing-500);
     }
 
     img {
-        width: 288px;
-        height: auto;
-        border-radius: 10px;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    header {
+        padding: 0 0.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     h1 {
-        color: var(--color-slate-900);
         text-align: center;
-        font-size: var(--font-size-text-preset-2);
-        line-height: 120%;
+        color: var(--color-slate-900);
+        font-size: var(--font-size-h1);
+        line-height: var(--line-height-h1);
     }
 
     p {
+        text-align: center;
         color: var(--color-slate-500);
-        text-align: center;
-        font-size: var(--font-size-text-preset-1);
-        font-style: normal;
-        line-height: 140%;
-        letter-spacing: 0.2px;
+        font-size: var(--font-size-paragraph);
+        line-height: var(--line-height-paragraph);
     }
 
+    /*ATRIBUTION*/
     .attribution {
-        font-size: 11px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
     }
 
-    .attribution a {
-        color: hsl(228, 45%, 44%);
+    .attribution p {
+        font-size: 0.75rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    .attribution-icons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .attribution-icons img {
+        width: 100%;
+        max-width: 25px;
+        transition: transform 0.1s ease;
+    }
+
+    .attribution-icons img:hover {
+        transform: scale(1.2);
     }
