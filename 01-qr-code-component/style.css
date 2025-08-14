@@ -74,14 +74,21 @@
     }
 
     /*ATRIBUTION*/
+    .author-name {
+        color: var(--color-gray-950);
+    }
+
+    /*ATRIBUTION*/
     .attribution {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 0.2rem;
     }
 
     .attribution p {
+        text-align: center;
         font-size: 0.75rem;
         font-family: Arial, Helvetica, sans-serif;
         color: black;
@@ -89,6 +96,8 @@
 
     .attribution-icons {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 0.5rem;
     }
 
