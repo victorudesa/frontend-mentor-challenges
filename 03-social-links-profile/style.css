@@ -42,12 +42,6 @@ body {
     gap: var(--spacing-500);
 }
 
-main {
-    display: flex;
-    /* Making sure the main container always wraps the article for intuitive sizing,
-    since all the content is inside the article and the main tag is only for semantic purposes*/
-}
-
 .profile-card {
     background-color: var(--color-grey-800);
     border-radius: 0.8rem;
@@ -66,13 +60,13 @@ main {
     }
 }
 
-.profile-header {
+.profile-card header {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-100);
+    gap: 0.3rem;
 }
 
-.profile-address {
+.profile-card header p {
     color: var(--color-green);
     font-weight: var(--font-weight-bold);
 }
@@ -108,10 +102,50 @@ li a {
     font-weight: var(--font-weight-semi-bold);
     border-radius: 0.5rem;
     padding: 1rem;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    ;
 }
 
 li a:hover {
     background-color: var(--color-green);
     color: var(--color-grey-800);
+}
+
+/*ATRIBUTION*/
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.attribution p {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.attribution a {
+    color: rgb(59, 59, 218);
+    text-decoration: underline;
+}
+
+.attribution-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.attribution-icons svg {
+    width: 100%;
+    max-width: 25px;
+    fill: white;
+    transition: transform 0.1s ease;
+}
+
+.attribution-icons img:hover {
+    transform: scale(1.2);
 }
