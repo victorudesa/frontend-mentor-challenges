@@ -23,8 +23,8 @@ This marks my fourth Frontend Mentor challenge. I'm excited by the noticeable in
 
 ### Screenshot
 
-* ![Desktop screenshot](./screenshots-solutions/desktop-solution.png)
-* ![Mobile screeshot](./screenshots-solutions/mobile-solution.png)
+![Desktop screenshot](./screenshots-solutions/desktop-solution.png)
+![Mobile screeshot](./screenshots-solutions/mobile-solution.png)
 
 ### Links
 
