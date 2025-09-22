@@ -1,11 +1,11 @@
-# Frontend Mentor Challenges - Social Links Profile Solution
+# Frontend Mentor Challenges - Recipe Page Solution
 
 Hello, I'm Victor!
 This is my solution to the [Recipe Page Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Challenges provided by Frontend Mentor offer an opportunity to enhance coding skills by building practical applications. 
 
 ## Table of contents
 
-- [Frontend Mentor Challenges - Social Links Profile Solution](#frontend-mentor-challenges---social-links-profile-solution)
+- [Frontend Mentor Challenges - Recipe Page Solution](#frontend-mentor-challenges---recipe-page-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
