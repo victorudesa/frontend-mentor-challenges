@@ -38,8 +38,10 @@ body {
     padding: 2rem;
     background-color: var(--color-stone-100);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 article {
@@ -163,12 +165,13 @@ table {
     gap: var(--spacing-100)
 }
 
-/* Design mobile */
+/* MOBILE QUERY */
 
 @media (width < 550px) {
     body {
-        padding: 0;
+        padding: 0 0 1rem 0;
         background-color: var(--color-white);
+        gap: 0.1rem;
     }
 
     article {
@@ -186,4 +189,43 @@ table {
     h1 {
         font-size: 2rem;
     }
+}
+
+/*ATRIBUTION*/
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.attribution p {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.attribution a {
+    color: rgb(59, 59, 218);
+    text-decoration: underline;
+}
+
+.attribution-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.attribution-icons svg {
+    width: 100%;
+    max-width: 25px;
+    fill: black;
+    transition: transform 0.1s ease;
+}
+
+.attribution-icons svg:hover {
+    transform: scale(1.2);
 }
