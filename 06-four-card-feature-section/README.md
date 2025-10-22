@@ -1,11 +1,11 @@
-# Frontend Mentor Challenges - Four-Card Feature Solution
+# Frontend Mentor Challenges - Four-Card Featur Section Solution
 
 Hi, I'm Victor!
-This is my solution to the [Four-Card Feature Challenge](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
+This is my solution to the [Four-Card Feature Section Challenge](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
 ## Table of contents
 
-- [Frontend Mentor Challenges - Four-Card Feature Solution](#frontend-mentor-challenges---four-card-feature-solution)
+- [Frontend Mentor Challenges - Four-Card Featur Section Solution](#frontend-mentor-challenges---four-card-featur-section-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
@@ -23,26 +23,29 @@ In this challenge, I wanted to practice speed and focus on building a clean and 
 ### Screenshot
 
 ![Desktop screenshot](./solutions-screenshots/desktop-solution.png)
+![Tablet screeshot](./solutions-screenshots/tablet-solution.png)
 ![Mobile screeshot](./solutions-screenshots/mobile-solution.png)
 
 ### Links
 
-- Solution URL: [Product Preview Card Component Solution Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/05-product-preview-card-component/)
-- Live Site URL: [Product Preview Card Component Solution - Live Page](https://victorudesa.github.io/frontend-mentor-challenges/05-product-preview-card-component/)
+- Solution URL: [Four-Card Feature Component Solution | Repository](https://github.com/victorudesa/frontend-mentor-challenges/tree/main/06-four-card-feature-section/)
+- Live Site URL: [Four-Card Feature Component Solution | Live Page](https://victorudesa.github.io/frontend-mentor-challenges/06-four-card-feature-section/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Simple CSS Reset
 - @media queries
-- Pseudo-classes (::marker and :last-child)
+- BEM methodology
+- ITCSS methodology
 
 ### What I learned
 
 * Reinforced and enhanced my proficiency in Semantic HTML and accessible practices, ensuring a robust document structure.
-* Significantly deepened my practical application of Media Queries for building fully responsive designs across various screen sizes.
+* Applied CSS Grid for the first time to achieve a clean and responsive code.
 * Enhanced CSS architecture with BEM and ITCSS.
 
 ### Continued development
