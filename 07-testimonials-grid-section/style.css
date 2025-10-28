@@ -1,0 +1,251 @@
+/* ITCSS */
+
+/* 01 - SETTINGS */
+:root {
+    /* Font */
+    font-size: 81.25%;
+    /* Using % to achieve the basic font-size of 13px so I don't overwrite users' preferrences in case
+    somebody wants to change their standard font-size for increased accessibility */
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+    /* Primary Colors */
+    --clr-purple-50: hsl(260, 100%, 95%);
+    --clr-purple-300: hsl(264, 82%, 80%);
+    --clr-purple-500: hsl(263, 55%, 52%);
+
+    /* Neutral Colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-100: hsl(214, 17%, 92%);
+    --clr-grey-200: hsl(0, 0%, 81%);
+    --clr-grey-300: #A3AAB4;
+    --clr-grey-400: hsl(224, 10%, 45%);
+    --clr-grey-500: hsl(217, 19%, 35%);
+    --clr-dark-blue: hsl(219, 29%, 14%);
+    --clr-black: hsl(0, 0%, 7%);
+}
+
+/* GENERIC */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set core root defaults - that's a trick I learned from Kevin Powell */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* BASE */
+body {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+    background-color: var(--clr-grey-100);
+    font-family: var(--ff-primary);
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+} */
+
+header {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: min-content min-content;
+    gap: 0.2rem 0.5rem;
+    align-items: flex-start;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 30px;
+    grid-row: 1 / -1;
+}
+
+/* OBJECTS */
+/* Mobile-first approach */
+.testimonial-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+    gap: 1rem;
+    padding-block: 2rem;
+    width: min(85%, 85rem);
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial-grid {
+        grid-template-areas:
+            "daniel daniel"
+            "jonathan jeanette"
+            "patrick patrick"
+            "kira kira";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .testimonial-grid {
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+    }
+}
+
+.card {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+/* COMPONENTS */
+.card>p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.card--daniel {
+    background-color: var(--clr-purple-500);
+    color: var(--clr-white);
+    grid-area: daniel;
+
+    /* Using CSS nesting to stylize just the color without creating more classes, since each specific card has its own color variations */
+    img {
+        border: 2px solid var(--clr-purple-300);
+    }
+
+    header>p,
+    p:last-of-type {
+        color: var(--clr-purple-50);
+    }
+}
+
+.card--jonathan {
+    background-color: var(--clr-grey-500);
+    color: var(--clr-white);
+    grid-area: jonathan;
+
+    header>p {
+        color: var(--clr-grey-200);
+    }
+
+    p:last-of-type {
+        color: var(--clr-grey-100);
+    }
+}
+
+.card--kira {
+    background-color: var(--clr-white);
+    grid-area: kira;
+
+    h2,
+    >p:first-of-type {
+        color: var(--clr-grey-500);
+    }
+
+    header>p {
+        color: var(--clr-grey-300);
+    }
+
+    >p:last-of-type {
+        color: var(--clr-grey-400);
+    }
+}
+
+.card--patrick {
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    grid-area: patrick;
+
+    img {
+        border: 2px solid var(--clr-purple-500);
+    }
+
+    >p:first-of-type {
+        color: var(--clr-grey-200);
+    }
+
+    >p:last-of-type {
+        color: var(--clr-grey-100);
+    }
+}
+
+.card--jeanette {
+    background-color: var(--clr-white);
+    grid-area: jeanette;
+
+    h2,
+    >p:first-of-type {
+        color: var(--clr-grey-500);
+    }
+
+    header>p,
+    >p:last-of-type {
+        color: var(--clr-grey-400);
+    }
+}
+
+/*ATRIBUTION*/
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding-block: 1rem;
+}
+
+.attribution p {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.attribution a {
+    color: rgb(59, 59, 218);
+    text-decoration: underline;
+}
+
+.attribution-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.attribution-icons svg {
+    width: 100%;
+    max-width: 25px;
+    fill: black;
+    transition: transform 0.1s ease;
+}
+
+.attribution-icons svg:hover {
+    transform: scale(1.2);
+}
