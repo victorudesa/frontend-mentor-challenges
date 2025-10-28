@@ -5,10 +5,10 @@ This is my solution to the [Testimonials Grid Section Challenge](https://www.fro
 
 ## Table of contents
 
-- [Frontend Mentor | Testimonials Grid Section Challenge](#frontend-mentor---testimonials-grid-section-solution)
+- [Frontend Mentor | Testimonials Grid Section Challenge](#frontend-mentor--testimonials-grid-section-challenge)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
     - [Links](#links)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
