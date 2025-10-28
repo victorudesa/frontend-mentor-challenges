@@ -4,8 +4,8 @@
 /* SETTINGS - defining variables */
 :root {
     font-size: 93.75%;
-    /* Using % to achieve the basic font-size of 15px so I don't overwrite users' preferrences in case
-    somebody wants to change their standard font-size for accessibility */
+    /* Using % to achieve the basic font-size of 13px so I don't overwrite users' preferrences in case
+    somebody wants to change their standard font-size for increased accessibility */
     font-family: 'Poppins', sans-serif;
     color: var(--color-grey-500);
 
