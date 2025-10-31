@@ -1,0 +1,291 @@
+/* First time using the OOCSS methodology instead of BEM. It might not be optimized for a small project
+like that but I want to practice for deepen my understanding*/
+
+/* Mobile-first approach */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ff-primary: "Red Hat Display", sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 900;
+
+    --clr-cyan-600: #4D96A9;
+    --clr-cyan-300: #8FE3F9;
+
+    --clr-purple-600: #855FB1;
+    --clr-purple-300: #D9B8FF;
+
+    --clr-slate-900: #28283D;
+    --clr-slate-600: #87879D;
+    --clr-slate-300: #D1D1DF;
+    --clr-white: white;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    place-items: center;
+}
+
+.section-hero .container {
+    display: grid;
+    grid-template-areas:
+        "image-left image-right"
+        "section-text section-text";
+    gap: 2rem;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 900px) {
+    .section-hero .container {
+        grid-template-areas:
+            "image-left section-text image-right"
+    }
+
+    .site-header {
+        margin-bottom: 1rem;
+    }
+}
+
+.pill-container {
+    position: absolute;
+    width: 100%;
+    top: -30px;
+}
+
+.pill {
+    font-weight: var(--fw-bold);
+    color: var(--clr-slate-600);
+    background-color: var(--clr-white);
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--clr-slate-300);
+    border-radius: 50%;
+}
+
+.pill::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 56px;
+    background-color: var(--clr-slate-300);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+}
+
+
+/* FEATURES SECTION */
+.section-features .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.image-container {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .image-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.feature-image {
+    border-radius: 0.5rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 200px;
+}
+
+.section-text {
+    max-width: 400px;
+    display: grid;
+    grid-area: section-text;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.hero-image-left {
+    width: 100%;
+    grid-area: image-left;
+}
+
+.hero-image-right {
+    width: 100%;
+    grid-area: image-right;
+}
+
+
+
+/* BUTTONS */
+.btn-group {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .btn-group {
+        grid-auto-flow: column;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: var(--fw-bold);
+    color: var(--clr-white);
+    border-width: 0;
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--clr-cyan-600);
+    padding: 0.8rem 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #5ebcd3;
+}
+
+.btn-secondary {
+    background-color: var(--clr-purple-600);
+}
+
+.btn-secondary:hover {
+    background-color: #9761d6;
+}
+
+.version-number {
+    color: var(--clr-cyan-300);
+}
+
+
+
+/* TEXT AND HEADINGS */
+.heading-xl {
+    font-size: 2rem;
+    color: var(--clr-slate-900);
+}
+
+.heading-lg {
+    font-size: 1.5rem;
+    color: var(--clr-slate-900);
+}
+
+.overline-text {
+    color: var(--clr-cyan-600);
+    font-weight: var(--fw-bold);
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.text-body {
+    color: var(--clr-slate-600);
+}
+
+
+
+
+/* FOOTER */
+.section-footer {
+    background-image:
+        linear-gradient(#4D96A999, #4D96A999),
+        url("assets/desktop/image-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 8rem;
+    position: relative;
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    gap: 3rem;
+    padding: 3rem 2rem;
+
+    .heading-lg {
+        color: var(--clr-white);
+        text-align: left;
+    }
+
+    .text-body {
+        color: var(--clr-white);
+    }
+
+    .btn-primary {
+        background-color: var(--clr-purple-600);
+    }
+
+    .btn-primary:hover {
+        background-color: #9761d6;
+    }
+
+    .version-number {
+        color: var(--clr-purple-300);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section-footer .container {
+        grid-template-rows: 1fr;
+        grid-auto-flow: column;
+        gap: 4rem;
+        padding: 6rem 6rem;
+    }
+
+    .text-body {
+        text-align: left;
+    }
+}
